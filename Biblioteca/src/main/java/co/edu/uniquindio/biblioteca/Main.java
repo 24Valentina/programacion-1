@@ -42,6 +42,17 @@ public class Main {
         libro236.setNumPaginas(336);
         libro236.setAnioPublicacion(2021);
 
+        String tituloMinuscula232 = libro232.getTitulo().toLowerCase();
+        String tituloMinuscula233 = libro233.getTitulo().toLowerCase();
+        String tituloMinuscula234 = libro234.getTitulo().toLowerCase();
+        String tituloMinuscula235 = libro235.getTitulo().toLowerCase();
+        String tituloMinuscula236 = libro236.getTitulo().toLowerCase();
+                System.out.println("El titulo del libro es: "+ '\n'+ tituloMinuscula232 +  " " + '\n'+ tituloMinuscula233 + " "+ '\n'+ tituloMinuscula234 + " "+ '\n'+  tituloMinuscula235 + " " + '\n'+  tituloMinuscula236);
+
+        Integer contadorVocales = 0;
+        Integer contadorConsonantes = 0;
+
+        if (true){}
 
 
 
