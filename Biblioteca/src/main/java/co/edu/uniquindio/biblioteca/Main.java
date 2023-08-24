@@ -3,9 +3,9 @@ package co.edu.uniquindio.biblioteca;
 public class Main {
     public static void main(String[] args) {
         Libro libro232 = new Libro();
-        libro232.setTitulo("Fisica General");
+        libro232.setTitulo("Calculo Integral");
         libro232.setAutor("S. burbano");
-        libro232.setGenero("Cientifico");
+        libro232.setGenero("Academico");
         libro232.setEditorial(" Tebar Flores");
         libro232.setNumPaginas(794);
         libro232.setAnioPublicacion(2019);
@@ -47,14 +47,155 @@ public class Main {
         String tituloMinuscula234 = libro234.getTitulo().toLowerCase();
         String tituloMinuscula235 = libro235.getTitulo().toLowerCase();
         String tituloMinuscula236 = libro236.getTitulo().toLowerCase();
-                System.out.println("El titulo del libro es: "+ '\n'+ tituloMinuscula232 +  " " + '\n'+ tituloMinuscula233 + " "+ '\n'+ tituloMinuscula234 + " "+ '\n'+  tituloMinuscula235 + " " + '\n'+  tituloMinuscula236);
+        System.out.println("_________________________________________________________________________________________" +
+                "____________________________________________________________________________________________________");
+                System.out.println("Los titulos de los libros son: "
+                        + '\n'+ tituloMinuscula232 +  " "
+                        + '\n'+ tituloMinuscula233 + " "
+                        + '\n'+ tituloMinuscula234 + " "
+                        + '\n'+  tituloMinuscula235 + " "
+                        + '\n'+  tituloMinuscula236);
+        System.out.println("________________________________________________________________________________________" +
+                "____________________________________________________________________________________________________");
 
         Integer contadorVocales = 0;
         Integer contadorConsonantes = 0;
 
-        if (true){}
+        if (tituloMinuscula232.charAt(0)== 'a' || tituloMinuscula232.charAt(0)== 'e'
+                || tituloMinuscula232.charAt(0)== 'i' || tituloMinuscula232.charAt(0)== 'o'
+                || tituloMinuscula232.charAt(0)== 'u'){
+            contadorVocales = contadorVocales+1;
 
 
+        }else {
+            contadorConsonantes = contadorConsonantes+1;
+        }
 
+        if (tituloMinuscula233.charAt(0)== 'a' || tituloMinuscula233.charAt(0)== 'e'
+                || tituloMinuscula233.charAt(0)== 'i' || tituloMinuscula233.charAt(0)== 'o'
+                || tituloMinuscula233.charAt(0)== 'u'){
+            contadorVocales = contadorVocales+1;
+
+
+        }else {
+            contadorConsonantes = contadorConsonantes+1;
+
+        }
+        if (tituloMinuscula234.charAt(0)== 'a' || tituloMinuscula234.charAt(0)== 'e'
+                || tituloMinuscula234.charAt(0)== 'i' || tituloMinuscula234.charAt(0)== 'o'
+                || tituloMinuscula234.charAt(0)== 'u'){
+            contadorVocales = contadorVocales+1;
+
+
+        }else {
+            contadorConsonantes = contadorConsonantes+1;
+        }
+        if (tituloMinuscula235.charAt(0)== 'a' || tituloMinuscula235.charAt(0)== 'e'
+                || tituloMinuscula235.charAt(0)== 'i' || tituloMinuscula235.charAt(0)== 'o'
+                || tituloMinuscula235.charAt(0)== 'u'){
+            contadorVocales = contadorVocales+1;
+
+
+        }else {
+            contadorConsonantes = contadorConsonantes+1;
+        }
+        if (tituloMinuscula236.charAt(0)== 'a' || tituloMinuscula236.charAt(0)== 'e'
+                || tituloMinuscula236.charAt(0)== 'i' || tituloMinuscula236.charAt(0)== 'o'
+                || tituloMinuscula236.charAt(0)== 'u'){
+            contadorVocales = contadorVocales+1;
+
+
+        }else {
+            contadorConsonantes = contadorConsonantes+1;
+        }
+
+        System.out.println("la cantidad de titulos que empiezan con consonante son: "+contadorConsonantes);
+        System.out.println("la cantidad de titulos que empiezan con vocal son: " +contadorVocales);
+        System.out.println("________________________________________________________________________________________" +
+                "____________________________________________________________________________________________________");
+        //Modificar titulo del libro232
+        System.out.println("Actualización del titulo calculo integral");
+
+         String tituloActual= "Calculo Integral";
+         if (libro235.getTitulo().equalsIgnoreCase(tituloActual)) {
+
+             System.out.println("El nombre del titulo235 antes de actualizarse es: "+ libro235.getTitulo());
+             libro235.setTitulo("Calculo Integral y diferencial");
+             System.out.println("El nombre del titulo235 actualizado es: "+ libro235.getTitulo());
+
+         } else if (libro233.getTitulo().equalsIgnoreCase(tituloActual)) {
+
+             System.out.println("El nombre del titulo233 antes de actualizarse es: "+ libro233.getTitulo());
+             libro233.setTitulo("Calculo Integral y diferencial");
+             System.out.println("El nombre del titulo232 actualizado es: "+ libro233.getTitulo());
+
+         } else if (libro234.getTitulo().equalsIgnoreCase(tituloActual)) {
+
+             System.out.println("El nombre del titulo234 antes de actualizarse es: "+ libro234.getTitulo());
+             libro234.setTitulo("Calculo Integral y diferencial");
+             System.out.println("El nombre del titulo232 actualizado es: "+ libro234.getTitulo());
+
+         } else if (libro232.getTitulo().equalsIgnoreCase(tituloActual)) {
+
+             System.out.println("El nombre del titulo232 antes de actualizarse es: "+ libro232.getTitulo());
+             libro232.setTitulo("Calculo Integral y diferencial");
+             System.out.println("El nombre del titulo232 actualizado es: "+ libro232.getTitulo());
+
+         }else if (libro236.getTitulo().equalsIgnoreCase(tituloActual)) {
+
+             System.out.println("El nombre del titulo236 antes de actualizarse es: "+ libro236.getTitulo());
+             libro236.setTitulo("Calculo Integral y diferencial");
+             System.out.println("El nombre del titulo235 actualizado es: "+ libro236.getTitulo());
+
+         }
+        System.out.println("________________________________________________________________________________________" +
+                "____________________________________________________________________________________________________");
+
+
+        //Cuantos libros tienen mas de 100 paginas
+        System.out.println("Cantidad de libros con mas de 100 paginas");
+
+        int paginasMayorCien= 0;
+         if (libro232.getNumPaginas() > 100){
+             paginasMayorCien= paginasMayorCien +1;
+         }
+        if (libro233.getNumPaginas() > 100){
+            paginasMayorCien= paginasMayorCien +1;
+        }
+        if (libro234.getNumPaginas() > 100){
+            paginasMayorCien= paginasMayorCien +1;
+        }
+        if (libro235.getNumPaginas() > 100){
+            paginasMayorCien= paginasMayorCien +1;
+        }
+        if (libro236.getNumPaginas() > 100){
+            paginasMayorCien= paginasMayorCien +1;
+        }
+        System.out.println("La cantidad de libros que tienen mas de 100 paginas son: "+ paginasMayorCien);
+        System.out.println("_________________________________________________________________________________________" +
+                "____________________________________________________________________________________________________");
+
+        // Cuantos libros tienen el genero academico
+        System.out.println("cantidad de libros de genero academico");
+
+        int generoAcademico= 0;
+        if (libro232.getGenero().equalsIgnoreCase("Academico")){
+            generoAcademico= generoAcademico +1;
+        }
+        if (libro233.getGenero().equalsIgnoreCase("Academico")){
+            generoAcademico= generoAcademico +1;
+        }
+        if (libro234.getGenero().equalsIgnoreCase("Academico")){
+            generoAcademico= generoAcademico +1;
+        }
+        if (libro235.getGenero().equalsIgnoreCase("Academico")){
+            generoAcademico= generoAcademico +1;
+        }
+        if (libro236.getGenero().equalsIgnoreCase("Academico")){
+            generoAcademico= generoAcademico +1;
+        }
+        System.out.println("La cantidad de libros con genero academico son: "+ generoAcademico);
+        System.out.println("________________________________________________________________________________________" +
+                "____________________________________________________________________________________________________");
     }
 }
