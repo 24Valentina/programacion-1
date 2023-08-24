@@ -4,11 +4,11 @@ public class Main {
     public static void main(String[] args) {
         Libro libro232 = new Libro();
         libro232.setTitulo("Calculo Integral");
-        libro232.setAutor("S. burbano");
+        libro232.setAutor("Jose M Casteleiro");
         libro232.setGenero("Academico");
-        libro232.setEditorial(" Tebar Flores");
-        libro232.setNumPaginas(794);
-        libro232.setAnioPublicacion(2019);
+        libro232.setEditorial("Esic Editorial");
+        libro232.setNumPaginas(508);
+        libro232.setAnioPublicacion(2002);
 
         Libro libro233 = new Libro();
         libro233.setTitulo("Matematicas Discretas");
